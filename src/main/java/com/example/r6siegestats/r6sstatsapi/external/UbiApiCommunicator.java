@@ -75,8 +75,6 @@ public class UbiApiCommunicator {
 
             // Unpack response
             ResponseBody responseBody = response.body();
-            System.out.println(responseBody);
-            System.out.println(responseStr);
             final var responseString = responseBody == null ? null : responseStr;
 
             log.debug("Response body: " + responseString);
